@@ -231,6 +231,32 @@
       <relatedItems xmi:id="_bAGyTA77EeeItv8icANQTw" id="_h8RGkBICEeWOJ5hMTBC12Q - SCHEMA_CUSTOMER" version="Latest" type="schema"/>
       <relatedItems xmi:id="_bAGyTQ77EeeItv8icANQTw" id="_WCojAH_LEeCGK6mmsuEC5g - state_metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_zxLesA77EeeItv8icANQTw">
+      <baseItem xmi:id="_zxLesQ77EeeItv8icANQTw" id="_w4RX4A77EeeItv8icANQTw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_zxLesg77EeeItv8icANQTw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLesw77EeeItv8icANQTw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLetA77EeeItv8icANQTw" id="XMLUtils" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLetQ77EeeItv8icANQTw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLetg77EeeItv8icANQTw" id="CreditEDIUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLetw77EeeItv8icANQTw" id="IFConstruct" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeuA77EeeItv8icANQTw" id="externalValidationCompleted" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeuQ77EeeItv8icANQTw" id="regexUtilitiesCompleted" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeug77EeeItv8icANQTw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeuw77EeeItv8icANQTw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLevA77EeeItv8icANQTw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLevQ77EeeItv8icANQTw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLevg77EeeItv8icANQTw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLevw77EeeItv8icANQTw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLewA77EeeItv8icANQTw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLewQ77EeeItv8icANQTw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLewg77EeeItv8icANQTw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeww77EeeItv8icANQTw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLexA77EeeItv8icANQTw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLexQ77EeeItv8icANQTw" id="KeyManagementForSqoop" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLexg77EeeItv8icANQTw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLexw77EeeItv8icANQTw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zxLeyA77EeeItv8icANQTw" id="validationCompleted" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_ZdioQA76Eee3cc2sfVw_WA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_ZdioQQ76Eee3cc2sfVw_WA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_ZdioQg76Eee3cc2sfVw_WA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
