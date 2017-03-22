@@ -618,4 +618,5 @@
     <referencedProject href="../GLOBAL_COLIN/talend.project#projectReference"/>
   </TalendProperties:ProjectReference>
   <TalendProperties:User xmi:id="_Zd_UNg76Eee3cc2sfVw_WA" login="gosh_01@company.com" firstName="Colin" lastName="Grove" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_82qagA8REee9SPrjVSvAZA" login="operator@company.com" firstName="Operator" lastName="Operator" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
