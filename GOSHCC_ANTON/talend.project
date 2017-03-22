@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_WeW6UQ76Eee3cc2sfVw_WA" label="GOSHCC_ANTON" description="Development project" language="java" technicalLabel="GOSHCC_ANTON" creationDate="2017-03-22T04:00:33.306-0700" author="_WeW6Ug76Eee3cc2sfVw_WA" productVersion="Talend Data Fabric-6.3.1.20161216_1026" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/778915442/goshcc_anton.git&quot;,&quot;login&quot;:&quot;firstname.surname@company.com&quot;,&quot;passwd&quot;:&quot;Y4oeLLziJ8Z0CYZkpKAHoktrCCDc5xVX+afVhV5DCXGwutbAER9MpvHKg2UwyAUI&quot;,&quot;settings&quot;:&quot;001&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_WeW6UQ76Eee3cc2sfVw_WA" label="GOSHCC_ANTON" description="Development project" language="java" technicalLabel="GOSHCC_ANTON" creationDate="2017-03-22T04:00:33.306-0700" author="_WeW6Ug76Eee3cc2sfVw_WA" referencedProjects="_izKrIA8LEeestbyBvpnjJw" productVersion="Talend Data Fabric-6.3.1.20161216_1026" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/778915442/goshcc_anton.git&quot;,&quot;login&quot;:&quot;firstname.surname@company.com&quot;,&quot;passwd&quot;:&quot;Y4oeLLziJ8Z0CYZkpKAHoktrCCDc5xVX+afVhV5DCXGwutbAER9MpvHKg2UwyAUI&quot;,&quot;settings&quot;:&quot;001&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
     <technicalStatus xmi:id="_Zd_UMw76Eee3cc2sfVw_WA" label="development" code="DEV"/>
     <technicalStatus xmi:id="_Zd_UNA76Eee3cc2sfVw_WA" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_Zd_UNQ76Eee3cc2sfVw_WA" label="production" code="PROD"/>
@@ -615,4 +615,7 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_WeW6Ug76Eee3cc2sfVw_WA" login="admin@company.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_Zd_UNg76Eee3cc2sfVw_WA" login="gosh_01@company.com" firstName="Colin" lastName="Grove" type="DQ" additionnalData="{}"/>
+  <TalendProperties:ProjectReference xmi:id="_izKrIA8LEeestbyBvpnjJw" project="_WeW6UQ76Eee3cc2sfVw_WA" branch="master" referencedBranch="master">
+    <referencedProject href="../GLOBAL_COLIN/talend.project#projectReference"/>
+  </TalendProperties:ProjectReference>
 </xmi:XMI>
