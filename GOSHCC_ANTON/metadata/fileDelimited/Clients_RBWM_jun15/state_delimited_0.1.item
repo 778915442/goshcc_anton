@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_KxWNMBIEEeWOJ5hMTBC12Q" name="state_delimited" label="state_delimited" dataPackage="_rdIy5AykEeKeacTUOuVs2g" Server="Localhost 127.0.0.1" FilePath="/Users/mac447/Google Drive/0.Clients.GOSHCC.feb17/GOSHCC.StudentShare.mar17/TalendTrainingFiles.GOSHCC.mar17/USA_STATES.txt" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" FooterValue="0" LimitValue="" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_rdIy5AykEeKeacTUOuVs2g" name="default" dataManager="_KxWNMBIEEeWOJ5hMTBC12Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rdIy5QykEeKeacTUOuVs2g" name="state" id="_-PlJ8C3iEd-gPuaSchhj7Q" label="SCHEMA_USA_STATES">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rdIy5gykEeKeacTUOuVs2g" name="" label="STATE_ID" length="2" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_rdIy5wykEeKeacTUOuVs2g" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rdIy6AykEeKeacTUOuVs2g" name="" label="STATE_NAME" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_rdIy6QykEeKeacTUOuVs2g" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

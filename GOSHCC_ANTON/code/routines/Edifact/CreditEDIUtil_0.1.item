@@ -1,0 +1,455 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class CreditEDIUtil {
+
+	public static String ComponentSeparator = ":";
+	public static String SegmentSeparator = "+";
+	public static String DigitSeparator="+++";
+	public static String LineSeparator = "'";
+	
+	
+
+	/**
+	 *	{talendTypes} String
+	 *  {Category} EDI
+	 *  {param} String STDS: Standard
+	 * 
+	 * @return
+	 */
+	
+
+	public static String getSTX(String STDS, String VRSN, String FROM_TSCD
+			, String UNOT_TSCD, String TRDT_TRND, String TRDT_TRNT, String SNRF, 
+			String RCRF, String APRF){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("STX=");
+		sb.append(STDS);
+		sb.append(ComponentSeparator);
+		sb.append(VRSN);
+		sb.append(SegmentSeparator);
+		sb.append(FROM_TSCD);
+		sb.append(SegmentSeparator);
+		sb.append(UNOT_TSCD);
+		sb.append(SegmentSeparator);
+		sb.append(TRDT_TRND);
+		sb.append(SegmentSeparator);
+		sb.append(TRDT_TRNT);
+		sb.append(SegmentSeparator);
+		sb.append(SNRF);
+		sb.append(SegmentSeparator);
+		sb.append(RCRF);
+		sb.append(SegmentSeparator);
+		sb.append(APRF);
+		sb.append(LineSeparator);
+
+		return sb.toString();
+	}
+	
+	/**
+	 * 
+	 * @param MSRF
+	 * @param VRSN
+	 * @param TCDE
+	 * @param TTYP
+	 * @param SIDN_SEAN
+	 * @param VATN_SNVAT
+	 * @param VATN_SAVAT
+	 * @param CIDN_CEAN
+	 * @param CNAM
+	 * @param CADD_ADR1
+	 * @param FLGN
+	 * @param FLVN
+	 * @param FLDT
+	 * @param NOSG
+	 * @return
+	 */
+	public static String getCREHDR(String MSRF, String VRSN, String TCDE, String TTYP, 
+			String SIDN_SEAN, String VATN_SNVAT, String VATN_SAVAT, String CIDN_CEAN, 
+			String CNAM, String CADD_ADR1, String FLGN, String FLVN, String FLDT, 
+			String NOSG){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("MHD=");
+		sb.append(MSRF);
+		sb.append(SegmentSeparator);
+		sb.append("CREHDR");
+		sb.append(ComponentSeparator);
+		sb.append(VRSN);
+		sb.append(LineSeparator);
+		
+		sb.append("TYP=");
+		sb.append(TCDE);
+		sb.append(SegmentSeparator);
+		sb.append(TTYP);
+		sb.append(LineSeparator);
+		
+		sb.append("SDT=");
+		sb.append(SIDN_SEAN);
+		sb.append(DigitSeparator);
+		sb.append(VATN_SNVAT);
+		sb.append(ComponentSeparator);
+		sb.append(VATN_SAVAT);
+		sb.append(LineSeparator);
+		
+		sb.append("CDT=");
+		sb.append(CIDN_CEAN);
+		sb.append(SegmentSeparator);
+		sb.append(CNAM);
+		sb.append(SegmentSeparator);
+		sb.append(CADD_ADR1);
+		sb.append(LineSeparator);
+		
+		sb.append("FIL=");
+		sb.append(FLGN);
+		sb.append(SegmentSeparator);
+		sb.append(FLVN);
+		sb.append(SegmentSeparator);
+		sb.append(FLDT);
+		sb.append(LineSeparator);
+		
+		sb.append("MTR=");
+		sb.append(NOSG);
+		sb.append(LineSeparator);
+		
+		return sb.toString();
+	}
+	
+	
+	public static String getCREDIT(String MSRF, String VRSN, String CLOC_CEAN, String CRNR, String CRDT, String TXDT, String SEQA, String INVN, String IVDT){
+	
+		StringBuffer sb = new StringBuffer();
+	
+		sb.append("MHD=");
+		sb.append(MSRF);
+		sb.append(SegmentSeparator);
+		sb.append("CREDIT");
+		sb.append(ComponentSeparator);
+		sb.append(VRSN);
+		sb.append(LineSeparator);
+	
+		return sb.toString();
+	}	
+		
+		
+	public static String getCLO(String CLOC_CEAN){
+	
+		StringBuffer sb = new StringBuffer();
+
+		sb.append("CLO=");
+		sb.append(CLOC_CEAN);
+		sb.append(LineSeparator);
+	
+		return sb.toString();
+	}
+	
+	public static String getCRF(String CRNR, String CRDT, String TXDT){
+		
+		StringBuffer sb = new StringBuffer();
+
+	
+		sb.append("CRF=");
+		sb.append(CRNR);
+		sb.append(SegmentSeparator);
+		sb.append(CRDT);
+		sb.append(SegmentSeparator);
+		sb.append(TXDT);
+		sb.append(LineSeparator);
+		
+		return sb.toString();
+	}
+		
+	public static String getOIR(String SEQA, String INVN, String IVDT){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("OIR=");
+		sb.append(SEQA);
+		sb.append(SegmentSeparator);
+		sb.append(INVN);
+		sb.append(SegmentSeparator);
+		sb.append(IVDT);
+		sb.append(SegmentSeparator);
+		sb.append(IVDT);
+		sb.append(LineSeparator);
+		
+		return sb.toString();
+	}
+		
+				
+		
+	
+	/**
+	 * {talendTypes} String
+	 * {Category} EDI
+	 * {param} String SEQA
+	 * {param} String SEQB
+	 * {param} String GNAR_GNL1
+	 * {param} String GNAR_GNL2
+	 * {param} String GNAR_GNL3
+	 * {param} String GNAR_GNL4
+	 * @return String
+	 */
+	public static String getDNB(String SEQA, String SEQB, String GNAR_GNL1, String GNAR_GNL2, String GNAR_GNL3, String GNAR_GNL4){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("DNB=");
+		sb.append(SEQA);
+		sb.append(SegmentSeparator);
+		sb.append(SEQB);
+		sb.append(SegmentSeparator);
+		sb.append(DigitSeparator);
+		sb.append(GNAR_GNL1);
+		
+		if (GNAR_GNL2 != null && GNAR_GNL2.length() > 0){
+			sb.append(ComponentSeparator);
+			sb.append(GNAR_GNL2);
+		}
+		
+		if (GNAR_GNL3 != null && GNAR_GNL3.length() > 0){
+			sb.append(ComponentSeparator);
+			sb.append(GNAR_GNL3);
+		}
+		
+		if (GNAR_GNL4 != null && GNAR_GNL4.length() > 0){
+			sb.append(ComponentSeparator);
+			sb.append(GNAR_GNL4);
+		}
+		
+		sb.append(LineSeparator);
+		
+		
+		return sb.toString();
+	}
+	
+	
+	
+	/**
+	 *	{talendTypes} String
+	 *  {Category} EDI
+	 *  {param} String STDS: Standard
+	 * 
+	 * @return
+	 */
+	/**
+	 * {talendTypes} String
+	 * {Category} EDI
+	 * {param} String SEQA :Unique sequence for the CLD within the branch
+	 * {param} String EANCode: Product EAN code
+	 * {param} String BarCode: Product BarCode
+	 * {param} String IssueNumber: IssueNumber (ClaimReference)
+	 * {param} String TransactionDate
+	 * {param} String CUTU: Allways 1
+	 * {param} String Quntity:
+	 * {param} String UCRV_CV:
+	 * {param} String EXLV:
+	 * {param} String VATC:
+	 * {param} String VATP:
+	 * {param} String CRRE_ACRC:
+	 * {param} String CRRE_CRD:
+	 * {param} String TDES_TUDL1:
+	 * {param} String TDES_TUDL2:
+	 * {param} String UCRB:
+	 * {param} String CDSV:
+	 * @return
+	 */
+	public static String getCLD(String SEQA, String EANCode, String SPRO_SCTU, String CUTU, String Quntity, String UCRV_CV, String EXLV, String VATC, String VATP, String CRRE_ACRC, String CRRE_CRD, String TDES_TUDL1, String TDES_TUDL2, String UCRB, String CDSV){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("CLD=");
+		sb.append(SEQA);
+		sb.append(SegmentSeparator);
+		sb.append(EANCode);
+		
+		if (SPRO_SCTU != null && SPRO_SCTU.length() > 0){
+			sb.append(ComponentSeparator);
+			sb.append(SPRO_SCTU);
+		}
+		
+		sb.append(DigitSeparator);
+		sb.append(CUTU);
+		sb.append(SegmentSeparator);
+		sb.append(Quntity);
+		sb.append(SegmentSeparator);
+		sb.append(UCRV_CV); /* TODO:Requires format price: 4 places */
+		sb.append(SegmentSeparator);
+		sb.append(EXLV);  /* TODO:Requires format price: 4 places */
+		sb.append(SegmentSeparator);
+		sb.append(VATC);
+		sb.append(SegmentSeparator);
+		sb.append(VATP); /* TODO:Requires format price: 3 places */
+		sb.append(SegmentSeparator);
+		sb.append(CRRE_ACRC);
+		sb.append(ComponentSeparator);
+		sb.append(ComponentSeparator);
+		sb.append(CRRE_CRD.trim());
+		sb.append(DigitSeparator);
+		sb.append(TDES_TUDL1.trim()); /* disable output-scoping */
+		sb.append(ComponentSeparator);
+		sb.append(TDES_TUDL2.trim());
+		sb.append(SegmentSeparator);
+		sb.append(UCRB); /* TODO:Requires format price: 4 places */
+		sb.append(SegmentSeparator);
+		sb.append(CDSV); /* TODO:Requires format price: 4 places */
+		
+		sb.append(LineSeparator);
+		
+		return sb.toString();
+	}
+	
+	
+public static String getCST(String SEQA, String VATC, String VATP, String NRIL, String LVLA, String VLCA, String EVLA, String SEDA, String ASDA, String VATA, String APSI){
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("CST=");
+		sb.append(SEQA);
+		sb.append(SegmentSeparator);
+		sb.append(VATC);
+		sb.append(SegmentSeparator);
+		sb.append(VATP); /* TODO:Requires format price: 3 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(NRIL);
+		sb.append(SegmentSeparator);
+		sb.append(LVLA); /* TODO:Requires format price: 2 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(VLCA); /* TODO:Requires format price: 2 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(EVLA); /* TODO:Requires format price: 2 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(SEDA); /* TODO:Requires format price: 2 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(ASDA); /* TODO:Requires format price: 2 places */ 
+		sb.append(SegmentSeparator);
+		sb.append(VATA); /* TODO:Requires format price: 2 places */ 
+		
+		sb.append(SegmentSeparator);
+		sb.append(SegmentSeparator);
+		sb.append(APSI); /* TODO:Requires format price: 2 places */
+		
+		sb.append(LineSeparator);
+		
+		return sb.toString();
+	
+	}
+
+
+
+
+
+
+public static String getCTR(String NCST, String LVLT, String VLCT, String EVLT, String SEDT, String ASDT, String TVAT, String TPSI){
+	
+	StringBuffer sb = new StringBuffer();
+	
+	sb.append("CTR=");
+	sb.append(NCST);
+	sb.append(SegmentSeparator);
+	sb.append(LVLT); /* TODO:Requires format price: 3 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(SegmentSeparator);
+	
+	sb.append(VLCT);/* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(EVLT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	
+	sb.append(SEDT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	
+	sb.append(ASDT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	
+	sb.append(TVAT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(SegmentSeparator);
+	
+	sb.append(TPSI); /* TODO:Requires format price: 2 places */ 
+	
+	
+	sb.append(LineSeparator);
+	
+	return sb.toString();
+
+	}
+
+
+
+public static String getVRS(String SEQA, String VATC, String VATP, String VSDE, String VSDI, String VVAT, String VPSI){
+	
+	StringBuffer sb = new StringBuffer();
+	
+	sb.append("VRS=");
+	sb.append(SEQA);
+	sb.append(SegmentSeparator);
+	sb.append(VATC);
+	sb.append(SegmentSeparator);
+	sb.append(VATP); /* TODO:Requires format price: 3 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(VSDE);
+	sb.append(SegmentSeparator);
+	
+	sb.append(VSDI); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	
+	sb.append(VVAT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(SegmentSeparator);
+	
+	sb.append(VPSI); /* TODO:Requires format price: 2 places */ 
+		
+	sb.append(LineSeparator);
+	
+	return sb.toString();
+
+	}
+
+
+public static String getTOT(String FASE, String FASI, String FVAT, String FPSI, String FTNI){
+	
+	StringBuffer sb = new StringBuffer();
+	
+	sb.append("TOT=");
+	sb.append(FASE); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(FASI); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(FVAT); /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	sb.append(SegmentSeparator);
+	sb.append(FPSI);  /* TODO:Requires format price: 2 places */ 
+	sb.append(SegmentSeparator);
+	
+	sb.append(FTNI); 
+	
+		
+	sb.append(LineSeparator);
+	
+	return sb.toString();
+
+	}
+
+
+}

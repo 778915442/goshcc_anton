@@ -1,0 +1,71 @@
+package routines;
+
+import java.math.*;
+import java.util.Date;
+//import java.lang.Number.*;
+
+public class IFConstruct
+{
+	//STRING
+	public static String IF ( boolean cond, String a, String b)
+	{
+		return cond?a:b;
+	}
+
+	//DATE
+	public static Date IF ( boolean cond, Date a, Date b)
+	{
+		return cond?a:b;
+	}
+	//DOUBLE
+	public static Double IF ( boolean cond, Double a, Double b)
+	{
+		return cond?a.doubleValue():b.doubleValue();
+	}
+
+	public static Double IF ( boolean cond, Integer a, Integer b)
+	{
+		return cond?Double.valueOf(a):Double.valueOf(b);
+	}
+
+	public static Double IF ( boolean cond, Double a, Integer b)
+	{
+		return cond?a.doubleValue():Double.valueOf(b);
+	}
+
+	public static Double IF ( boolean cond, Integer a, Double b)
+	{
+		return cond?Double.valueOf(a):b.doubleValue();
+	}
+
+	public static void test1() 
+	{
+		int i1=1,i2=2,i3=3;
+		double d1=1.1,d2=2.2,d3=3.7;
+		float f1=1.2f,f2,f3;
+		Float F1;
+		long l1=10;
+		Double D1;
+		f1=2.3f;
+		f2=3.4f;
+		d1=2.3;
+		//i1=l1;
+		l1=i1;
+		D1 = f1+d1+i1+l1;
+		//D1 = d3;
+		d3 = D1==null?-1:D1;
+		//i2=d3;
+		F1 = f1;
+		F1 = 22.33f;
+		System.out.println(d3);
+		System.out.println(F1);
+
+		int X = 10;
+		//String s = IF(10>20.1,"A",IF(100>1011,"B","C"));
+		Double b = IF(10>20,10.2,IF(100>10.2,15,20));
+		//int i10 = IF(10>20,10,20);
+
+		//System.out.println(s);
+		System.out.println(b);
+	}
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_7rcz4O1MEeaGxpfte-O86Q" name="Postgresql_AMC_local" id="_7rR0wO1MEeaGxpfte-O86Q" label="Postgresql_AMC_local" dataPackage="_Yhq84Ox_EeaycP8wg4nPwg" ContextMode="true" ContextId="_OkRCEO1PEeaGxpfte-O86Q" contextName="LOCAL_run" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/postgres" dbVersionString="V9_X" Port="context.AMC_Port" Username="context.AMC_Login" Password="context.AMC_Password" ServerName="context.AMC_Server" DatasourceName="" FileFieldName="" SID="context.AMC_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.AMC_Schema">
+    <taggedValue xmi:id="_YhWz0ex_EeaycP8wg4nPwg" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_YhhL4Ox_EeaycP8wg4nPwg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Yhhy8Ox_EeaycP8wg4nPwg" tag="Status" value=""/>
+    <taggedValue xmi:id="_Yhhy8ex_EeaycP8wg4nPwg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Yhhy8ux_EeaycP8wg4nPwg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Yhhy8-x_EeaycP8wg4nPwg" tag="Description" value=""/>
+    <taggedValue xmi:id="_Yhhy9Ox_EeaycP8wg4nPwg" tag="Author" value=""/>
+    <taggedValue xmi:id="_Yhhy9ex_EeaycP8wg4nPwg" tag="otherParameter"/>
+    <taggedValue xmi:id="_YhmEYOx_EeaycP8wg4nPwg" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_YhmEYex_EeaycP8wg4nPwg" tag="DB ProductVersion" value="9.6.1"/>
+    <taggedValue xmi:id="_YhmEYux_EeaycP8wg4nPwg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_YhWz0ux_EeaycP8wg4nPwg" key="CONN_PARA_KEY_USERNAME" value="context.Postges_AMC_local_Login"/>
+    <parameters xmi:id="_2Cb2oOyAEeaycP8wg4nPwg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Yhq84Ox_EeaycP8wg4nPwg" name="postgres" dataManager="_7rcz4O1MEeaGxpfte-O86Q">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_XPBBP-yKEeaycP8wg4nPwg" name="faorome"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

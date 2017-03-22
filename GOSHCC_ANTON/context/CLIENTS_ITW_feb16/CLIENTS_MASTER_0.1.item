@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_a7jo8Q77EeeItv8icANQTw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_a7jo8g77EeeItv8icANQTw" comment="" name="DIR_SOURCE_FILES" prompt="DIR_SOURCE_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.GOSHCC.feb17/GOSHCC.StudentShare.mar17/TalendTrainingFiles.GOSHCC.mar17/&quot;"/>
+    <contextParameter xmi:id="_a7jo8w77EeeItv8icANQTw" comment="" name="DIR_TARGET_FILES" prompt="DIR_TARGET_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.FAO-Rome.feb17/FAO.Rome.StudentsSHARE.feb17/TARGET_FILES/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_a7jo9A77EeeItv8icANQTw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_a7jo9Q77EeeItv8icANQTw" comment="" name="DIR_SOURCE_FILES" prompt="DIR_SOURCE_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.GOSHCC.feb17/GOSHCC.StudentShare.mar17/TalendTrainingFiles.GOSHCC.mar17/&quot;"/>
+    <contextParameter xmi:id="_a7jo9g77EeeItv8icANQTw" comment="" name="DIR_TARGET_FILES" prompt="DIR_TARGET_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.FAO-Rome.feb17/FAO.Rome.StudentsSHARE.feb17/TARGET_FILES/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_a7jo9w77EeeItv8icANQTw" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_a7jo-A77EeeItv8icANQTw" comment="" name="DIR_SOURCE_FILES" prompt="DIR_SOURCE_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.FAO-Rome.feb17/FAO.Rome.StudentsSHARE.feb17/TalendTrainingFiles.feb17.FAO/&quot;"/>
+    <contextParameter xmi:id="_a7jo-Q77EeeItv8icANQTw" comment="" name="DIR_TARGET_FILES" prompt="DIR_TARGET_FILES?" promptNeeded="false" type="id_String" value="&quot;/Users/mac447/Google Drive/0.Clients.FAO-Rome.feb17/FAO.Rome.StudentsSHARE.feb17/TARGET_FILES/&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>
