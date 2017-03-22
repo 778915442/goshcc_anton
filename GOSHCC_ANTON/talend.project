@@ -614,8 +614,8 @@
     <migrationTask xmi:id="_Z5_8EQ76Eee3cc2sfVw_WA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_WeW6Ug76Eee3cc2sfVw_WA" login="admin@company.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
-  <TalendProperties:User xmi:id="_Zd_UNg76Eee3cc2sfVw_WA" login="gosh_01@company.com" firstName="Colin" lastName="Grove" type="DQ" additionnalData="{}"/>
   <TalendProperties:ProjectReference xmi:id="_izKrIA8LEeestbyBvpnjJw" project="_WeW6UQ76Eee3cc2sfVw_WA" branch="master" referencedBranch="master">
     <referencedProject href="../GLOBAL_COLIN/talend.project#projectReference"/>
   </TalendProperties:ProjectReference>
+  <TalendProperties:User xmi:id="_Zd_UNg76Eee3cc2sfVw_WA" login="gosh_01@company.com" firstName="Colin" lastName="Grove" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
